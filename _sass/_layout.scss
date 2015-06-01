@@ -1,236 +1,192 @@
-/**
- * Site header
- */
-.site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
-    position: relative;
+* {
+  border:none;
+  outline:none;
+  text-rendering:optimizeLegibility;
 }
 
-.site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
+::selection {
+  background: rgba(51, 123, 183, .2);
+  text-shadow: none;
 }
 
-.site-nav {
-    float: right;
-    line-height: 56px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Droid Serif", serif;
+  line-height: 1.5em;
+}
 
-    .menu-icon {
-        display: none;
-    }
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
+header {
+  margin-top: 100px;
 
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
+  ul {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding-left: 0;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      padding-right: 20px;
+      text-transform: uppercase;
     }
 
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
+    li.active {
+      font-weight: 800;
     }
+  }
+
+  .brand {
+    font-family: 'Lobster', sans-serif;
+    font-size: 40px;
+    line-height: 0.5em;
+  }
 }
 
+footer {
+  margin-top: 100px;
+  margin-bottom: 80px;
 
-
-/**
- * Site footer
- */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
-}
-
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
-
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-
-
-/**
- * Page content
- */
-.page-content {
-    padding: $spacing-unit 0;
-}
-
-.page-heading {
+  .love {
+    animation: pulse 1s linear infinite;
     font-size: 20px;
+    color: rgb(51, 123, 183);
+    padding: 0 2px;
+  }
+
+  @keyframes "pulse" {
+   0% {
+      transform: scale(1.1);
+   }
+   50% {
+      transform: scale(0.8);
+   }
+   100% {
+      transform: scale(1);
+   }
+  }
 }
 
-.post-list {
-    margin-left: 0;
-    list-style: none;
+#pitch {
+  margin-top: 80px;
+  padding-right: 100px;
 
-    > li {
-        margin-bottom: $spacing-unit;
-    }
-}
+  h1 {
+    font-size: 37px;
+    font-weight: 700;
 
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-link {
-    display: block;
-    font-size: 24px;
-}
-
-
-
-/**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
-}
-
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
-}
-
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
+    span.plusone {
+      font-size: 30px;
+      position: relative;
+      display: inline-block;
+      font-family: 'Leckerli One';
+      top: -35px;
+      color: red;
+      margin-right: -55px;
+      transform: skew(0deg) rotate(-30deg) scale(1);
     }
 
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
+    span.their {
+      text-decoration: line-through;
     }
 
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
+    span.your {
+      position: relative;
+      display: inline-block;
+      font-family: 'Leckerli One';
+      top: 35px;
+      left: -93px;
+      color: red;
+      margin-right: -95px;
     }
+
+    strong {
+      background: rgb(255,255,120);
+      padding: 0 10px;
+    }
+  }
 }
+
+#expectations {
+  margin-top: 70px;
+  margin-bottom: 70px;
+
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6em;
+
+  .para {
+    margin-top: 40px;
+  }
+
+  .clients {
+    margin-top: 30px;
+
+    img {
+      float: left;
+      margin-right: 20px;
+    }
+  }
+}
+
+#worries {
+  margin-top: 70px;
+  padding: 100px 0;
+
+  background: #379;
+  color: #fff;
+
+  .row {
+    margin-bottom: 50px;
+
+    p {
+      line-height: 1.6em;
+      font-size: 18px;
+    }
+  }
+}
+
+#about_intro {
+  margin-top: 100px;
+}
+
+#about {
+  padding: 100px 0 50px 0;
+  background: #fff;
+
+  h4 {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1em;
+    margin: 0;
+
+    span.plusone {
+      font-size: 20px;
+      position: relative;
+      display: inline-block;
+      font-family: 'Leckerli One';
+      top: -15px;
+      color: red;
+      transform: skew(0deg) rotate(-30deg) scale(1);
+    }
+  }
+
+  p.title {
+    line-height: 1.6em;
+    color: #888;
+  }
+
+  .members {
+    margin-bottom: 50px;
+
+    .avatar {
+       img {
+          width: 80px;
+          height: 80px;
+       }
+    }
+  }
+}
+

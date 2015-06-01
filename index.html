@@ -2,22 +2,146 @@
 layout: default
 ---
 
-<div class="home">
+<div id="pitch" class="container">
+  <div class="row">
+    <div class="col-sm-offset-1 col-md-9">
+      <h1>
+        We're gang of two<span class="plusone">+1 UX</span> &mdash; we <strong>create</strong> for our clients
+        <strong>simple</strong> &amp; <strong>meaninful</strong> applications that
+        <strong>grow</strong> <span class="their">their</span><span class="your">your?</span> business.
+      </h1>
+    </div>
+  </div>
+</div>
 
-  <h1 class="page-heading">Posts</h1>
+<div id="expectations" class="container">
+  <div class="row">
+    <div class="col-sm-offset-1 col-md-9">
+      <p>
+        All of our clients get premium service &mdash; partners like treatment &mdash; top quality software and money back guarantee if results are not delivered.
+      </p>
+    </div>
+  </div>
+</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<div id="worries">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-offset-1 col-md-9">
+        <h1>FAQ</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-offset-1 col-md-9">
+        <h3>How can you optimise your business with software so you can grow and at the same time it is not going to cost you fortune?</h3>
+        <p>
+          We optimise your business with custom build or tweaked software so your company can grow and it's going to cost you fraction of what you get back from it. It's going to be investment.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-offset-1 col-md-9">
+        <h3>Afraid that the solution isn't going to be what you're looking for?</h3>
+        <p>
+          Working with you on the project we make sure that we focus on results instead of just deliveries.
+          Most software companies will focus on delivering for you time spend working or giving you more software, instead we focus on results.
+          Not delivering results ins't option for us.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-offset-1 col-md-9">
+        <h3>Concerned that you might loose your money if you pick the wrong software solution provider?</h3>
+        <p>
+          Rightly so. Choosing the right solution provider is important. Instead of focusing on what the company does
+          you should always focus on understanding and demostration of their ability to provide results for you.
+          In order to do that you need to know what you're trying to archive with your project/software before you contact any service provider.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-offset-1 col-md-9">
+        <h3>What if it's going to take a long time to get results?</h3>
+        <p>
+          In order to avoid delayed/late delivery of results it's important to work on it iteratively. Working
+          in short iterations (such as 1 week cycles) you can see much sooner if you're going the right direction.
+          If you're going the wrong direction you should change your thinking and reasses the direction.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<div id="about">
+  <div class="container">
+    <div class="row members">
+      <div class="col-sm-offset-1 col-md-1 col-lg-1 avatar">
+        <img src="/images/laco.jpeg" alt="Ladislav Martincik" class="img-circle"/>
+      </div>
+      <div class="col-md-2 col-lg-3">
+        <h4>Ladislav Martincik</h4>
+        <p class="title">
+          Software Engineer, organizer
+        </p>
+        <p>
+          <a class="btn btn-social-icon btn-linkedin" target="_blank">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a class="btn btn-social-icon btn-github" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+          <a class="btn btn-social-icon btn-twitter" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </p>
+      </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      <div class="col-sm-offset-1 col-md-1 col-lg-1 avatar">
+        <img src="/images/roman.png" alt="Roman Sklenar" class="img-circle"/>
+      </div>
+      <div class="col-md-4 col-lg-4">
+        <h4>Roman Sklenar</h4>
+        <p class="title">
+          Software Engineer
+        </p>
+        <p>
+          <a class="btn btn-social-icon btn-linkedin" target="_blank">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a class="btn btn-social-icon btn-github" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+          <a class="btn btn-social-icon btn-twitter" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </p>
+      </div>
+    </div>
 
+    <div class="row members">
+      <div class="col-sm-offset-1 col-md-1 col-lg-1 avatar">
+        <img src="/images/tomas.jpg" alt="Tomas Koliba" class="img-circle"/>
+      </div>
+      <div class="col-md-2 col-lg-3">
+        <h4>Tomas Koliba <span class="plusone">+1 UX</span></h4>
+        <p class="title">
+          External UX consultant
+        </p>
+        <p>
+          <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/pub/tom%C3%A1%C5%A1-koliba/25/258/144" target="_blank">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a class="btn btn-social-icon btn-behance" href="https://www.behance.net/TomasKoliba" target="_blank">
+            <i class="fa fa-behance"></i>
+          </a>
+          <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/tomaskoliba" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </div>
 </div>
