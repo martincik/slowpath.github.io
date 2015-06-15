@@ -132,22 +132,94 @@ footer {
   }
 }
 
-#worries {
-  margin-top: 70px;
-  padding: 100px 0;
+#worries,
+#how2success {
+  padding: 80px 0;
 
-  background: #379;
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6em;
+
+  background: #337BB7;
   color: #fff;
 
-  .row {
-    margin-bottom: 50px;
 
-    p {
-      line-height: 1.6em;
-      font-size: 18px;
-    }
+  h1 {
+    font-size: 37px;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-family: 'Leckerli One';
+    font-size: 30px;
+  }
+
+  ul {
+    list-style-type: lower-roman;
+  }
+
+  ul, ol {
+    line-height: 1.8em;
+    font-size: 22px;
+    margin-top: 40px;
+  }
+
+  ol li {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+
+  .note-bottom {
   }
 }
+
+#worries {
+  strong {
+    background: #FF753A;
+    padding: 0 10px;
+    font-weight: normal;
+  }
+}
+
+#how2success {
+  background: #fff;
+  color: #444;
+
+  strong {
+    background: rgb(255,255,120);
+    padding: 0 10px;
+  }
+
+  h1 {
+    margin-top: 80px;
+  }
+
+  h3 {
+    margin-top: 80px;
+  }
+
+  p:last-child {
+    padding-bottom: 80px;
+  }
+}
+
+#ourhelp {
+  padding: 80px 0;
+
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6em;
+
+  background: #337BB7;
+  color: #fff;
+}
+
 
 #about_intro {
   margin-top: 100px;
