@@ -4,6 +4,10 @@
   text-rendering:optimizeLegibility;
 }
 
+a {
+  text-decoration: underline;
+}
+
 ::selection {
   background: rgba(51, 123, 183, .2);
   text-shadow: none;
@@ -42,6 +46,10 @@ header {
     font-family: 'Lobster', sans-serif;
     font-size: 40px;
     line-height: 0.5em;
+
+    a {
+      text-decoration: none;
+    }
   }
 }
 
@@ -111,7 +119,7 @@ footer {
 
 #expectations {
   margin-top: 70px;
-  margin-bottom: 70px;
+  margin-bottom: 110px;
 
   font-family: 'Droid Serif', serif;
   font-weight: 400;
@@ -133,7 +141,11 @@ footer {
 }
 
 #worries,
-#how2success {
+#how2success,
+#ourhelp,
+#benefits,
+#services,
+#faq {
   padding: 80px 0;
 
   font-family: 'Droid Serif', serif;
@@ -147,12 +159,13 @@ footer {
 
   h1 {
     font-size: 37px;
+    font-family: 'Oswald', sans-serif;
     font-weight: 700;
   }
 
   h3 {
-    font-family: 'Leckerli One';
-    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
   }
 
   ul {
@@ -179,24 +192,36 @@ footer {
 }
 
 #worries {
+  background: #337BB7 url('/images/escheresque.png');
+  background-color: #337bb7;
+  background-image: url(http://www.transparenttextures.com/patterns/robots.png);
   strong {
-    background: #FF753A;
+    background: rgb(255,255,120);
     padding: 0 10px;
-    font-weight: normal;
+    color: #444;
   }
 }
 
-#how2success {
+#how2success,
+#ourhelp,
+#benefits,
+#services,
+#faq {
   background: #fff;
   color: #444;
+  background-color: #ffffff;
+  background-image: url(http://www.transparenttextures.com/patterns/lined-paper-2.png);
 
   strong {
     background: rgb(255,255,120);
     padding: 0 10px;
+    color: #444;
   }
 
   h1 {
-    margin-top: 80px;
+    margin-top: 60px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
   }
 
   h3 {
@@ -204,20 +229,43 @@ footer {
   }
 
   p:last-child {
-    padding-bottom: 80px;
+    padding-bottom: 60px;
   }
 }
 
 #ourhelp {
-  padding: 80px 0;
-
-  font-family: 'Droid Serif', serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.6em;
-
   background: #337BB7;
   color: #fff;
+  background-image: url(http://www.transparenttextures.com/patterns/lined-paper-2.png);
+}
+
+#benefits {
+  color: #fff;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  background-color: #242424;
+  background-image: url(http://www.transparenttextures.com/patterns/shattered-dark.png);
+
+  h3 {
+    position: relative;
+    .guarantee {
+      position: absolute;
+      top: -40px;
+      right: 310px;
+      width: 120px;
+    }
+  }
+}
+
+#faq {
+  color: #fff;
+  background-color: #242424;
+  background-image: url(http://www.transparenttextures.com/patterns/whitey.png);
+}
+
+#services {
+  background-color: #ffffff;
+  background-image: url(http://www.transparenttextures.com/patterns/skulls.png);
 }
 
 
@@ -226,8 +274,14 @@ footer {
 }
 
 #about {
-  padding: 100px 0 50px 0;
-  background: #fff;
+  padding: 100px 0;
+  background-color: #ffffff;
+  background-image: url(http://www.transparenttextures.com/patterns/ag-square.png);
+
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+  }
 
   h4 {
     font-family: 'Open Sans', sans-serif;
@@ -251,6 +305,7 @@ footer {
   }
 
   .members {
+    margin-top: 40px;
     margin-bottom: 50px;
 
     .avatar {
