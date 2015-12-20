@@ -352,9 +352,41 @@ background-image: url(http://www.transparenttextures.com/patterns/worn-dots.png)
   background-color: #91bd09;
   text-decoration: none;
 }
-.green.button:hover { 
+.green.button:hover {
   background-color: #749a02;
   text-decoration: none;
 }
 
+#customers {
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
 
+  .customers {
+    min-height: 100px;
+
+    .center-block {
+      margin: 10px;
+    }
+
+    .panter {
+      img {
+        margin-top: 15px;
+      }
+    }
+
+    .benztown {
+      img {
+        margin-top: 40px;
+      }
+    }
+
+    .railsformers {
+      img {
+        margin-top: 25px;
+      }
+    }
+  }
+}
