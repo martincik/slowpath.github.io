@@ -269,6 +269,14 @@ background-image: url(http://www.transparenttextures.com/patterns/worn-dots.png)
   background-image: url(http://www.transparenttextures.com/patterns/transparent-square-tiles.png);
 }
 
+#services h3 {
+  width: 100%;
+
+  img {
+    float: right;
+    max-width: 150px;
+  }
+}
 
 #about_intro {
   margin-top: 100px;
@@ -352,7 +360,7 @@ background-image: url(http://www.transparenttextures.com/patterns/worn-dots.png)
   background-color: #91bd09;
   text-decoration: none;
 }
-.green.button:hover { 
+.green.button:hover {
   background-color: #749a02;
   text-decoration: none;
 }
