@@ -365,4 +365,14 @@ background-image: url(http://www.transparenttextures.com/patterns/worn-dots.png)
   text-decoration: none;
 }
 
+@media only screen and (max-width: 992px) {
+  .col-md-8{
+    float: left;
+  }
+
+  .col-md-3{
+    float: right;
+  }
+}
+
 
